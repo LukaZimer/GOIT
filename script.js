@@ -12,9 +12,23 @@ function myColorChange() {
 
 
 
+function mojaFunkcja(imie) {
 
-function mojaFunkcja(){
-
-    // cialo funkcji
+    const clients = ["Mango", "Poly", "Ajax"];
+    const clientNameToFind = "Patryk";
+    let message;
     
+    for (const client of clients) {
+    
+      if (client === imie) {
+        message = "Klient z takim imieniem jest w bazie danych!";
+        break;
+      }
+    
+      message = "Nie znaleźliśmy takiego klienta w bazie danych!";
+    }
+    
+    console.log(message);
+    
+
 }
